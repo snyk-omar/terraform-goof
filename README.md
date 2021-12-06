@@ -48,4 +48,4 @@ For this example, we have commited the file `tf-plan.json` with that secret info
 
 When scanning the plan file, we are looking for vulnerabilities in all of the resources, which will be deployed on the next execution of `terraform apply tfplan.binary`, which is applying the configuration related to the plan output but in a machine readble format.
 
-It's worth noting that not all configuration files are detected in our default scans. This is mostly due to the ability to use third party modules when attempting to deploy resources quickly. The plan output scan is a good way to see the FULL view of what is being deployed and not just the code which the customers manage.
+It is worth noting that not all configuration files are detected in our default scans. This is mostly due to the ability to use third party modules when attempting to deploy resources quickly. The plan output scan is a good way to see the FULL view of what is being deployed and not just the code which the customers manage.
