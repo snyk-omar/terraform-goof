@@ -10,5 +10,5 @@ jobs:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         with:
           # file: modules
-          directory: modules
-          args: --severity-threshold=high
+          entryPoint: modules
+          # args: --severity-threshold=high
