@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run Snyk to check Kubernetes manifest file for issues
-        uses: snyk-omar/actions/iac@master
+        uses: snyk-omar/actions/iac@omar-iac-dir
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         with:
