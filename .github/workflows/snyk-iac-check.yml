@@ -4,6 +4,8 @@ jobs:
   security:
     runs-on: ubuntu-latest
     steps:
+      - name: Check out repo
+        uses: actions/checkout@v2
       - name: Run Snyk to check Kubernetes manifest file for issues
         uses: snyk-omar/actions/iac@omar-iac-dir
         env:
