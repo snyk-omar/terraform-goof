@@ -9,5 +9,5 @@ jobs:
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         with:
-          file: modules/storage
+          file: modules/storage/main.tf
           args: --severity-threshold=high
