@@ -9,5 +9,5 @@ jobs:
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         with:
-          # file: modules
+          # file: modules/storage
           args: modules/storage
