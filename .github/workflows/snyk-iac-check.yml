@@ -5,9 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run Snyk to check Kubernetes manifest file for issues
-        uses: snyk/actions/iac@master
+        uses: snyk-omar/actions/iac@master
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         with:
-          file: modules/storage/main.tf
-          args: -d --severity-threshold=high
+          directory: modules
+          args: --severity-threshold=high
